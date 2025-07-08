@@ -1,4 +1,4 @@
-import "../styles/globals.css"; // or use '@styles/globals.css' if alias works
+import "../styles/globals.css";
 
 export const metadata = {
   title: "Promptopia",
@@ -9,10 +9,15 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
+        {/* Background grid & blur */}
         <div className="main">
           <div className="gradient" />
         </div>
-        <main className="app">{children}</main>
+
+        {/* Main content layout */}
+        <main className="relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6">
+          {children}
+        </main>
       </body>
     </html>
   );
