@@ -6,6 +6,7 @@ const Home = () => {
       <h1>
         Discover & Share
       </h1>
+      <p>Building in process</p>
     </section>
 
     // <div className="min-h-screen flex items-center justify-center bg-gray-100">
